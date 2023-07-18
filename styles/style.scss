@@ -1,0 +1,18 @@
+body {
+  overflow-x: hidden
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+@import 'fonts';
+@import 'varables';
+@import 'blog/containers';
+@import 'blog/info';
+@import 'blog/menu';
+@import 'blog/beverages';

@@ -1,0 +1,239 @@
+
+.info-aquapark-content {
+  position: relative;
+  margin: 40px 0 140px 0;
+}
+
+.info-aquapark {
+  display: flex;
+  width: 1000px;
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  border-radius: 50px;
+  border: 2px solid $border-color;
+  background: radial-gradient(116.62% 84.16% at 22.68% 20.40%, rgba(231, 231, 231, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(255, 255, 255, 0.20);
+  backdrop-filter: blur(23px);
+  margin: 0 auto;
+  z-index: 99 !important;
+
+  &__title {
+    color: $main-color;
+    text-align: center;
+    font-family: 'Gilroy-Bold';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: -0.72px;
+    margin: 0;
+  }
+
+  &__text{
+    color: $text-color;
+    text-align: center;
+    font-family: "Gilroy-SemiBold";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: -0.72px;
+    width: 78%;
+    margin: 0 auto;
+  }
+
+  &__img {
+    position: absolute;
+    z-index: -1;
+    width: 387px;
+    height: 350px;
+    left: -120px;
+    top: 60px;
+  }
+
+  &__subimg {
+    position: absolute;
+    z-index: -1;
+    width: 330px;
+    height: 298px;
+    right: -150px;
+    top: 630px;
+  }
+
+  &__desctop-dn {
+    display: none;
+  }
+
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+
+  } 
+
+}
+
+.aquapark-chef-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 95px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    width: 258px;
+    height: 304px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 2px solid $border-color;
+    background: radial-gradient(116.62% 84.16% at 22.68% 20.40%, rgba(231, 231, 231, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%), rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(23px);
+
+    h3 {
+      color: #1F1F1F;
+      font-family: 'Gilroy-SemiBold';
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 36px;
+      margin: 0 auto 8px auto;
+      width: 70%;
+      text-align: center;
+    }
+
+    h4 {
+      text-align: center;
+      font-family: 'Gilroy-Medium';
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      color: $main-color;
+      margin: 0;
+    }
+
+    img {
+      width: 178px;
+      height: 178px;
+      position: absolute;
+      left: 50%;
+      top: 15%;
+      transform: translate(-50%,-50%);
+    }
+  }
+
+  &__content {
+    position: absolute;
+    bottom: 32px;
+  }
+}
+
+
+
+@media screen and (max-width:480px) {
+  .info-aquapark {
+    width: 100%;
+    min-height: fit-content;
+    gap: 0;
+    padding: 20px;
+
+    &__title {
+      font-size: 32px;
+      margin: 0 0 10px 0;
+      text-align: unset;
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+    }
+
+    &__text {
+      font-family: 'Gilroy-Regular';
+      font-size: 16px;
+      font-weight: 400;
+      width: 100%;
+      text-align: unset;
+      margin-bottom: 10px;
+    }
+
+    &__wave-img {
+      width: 90px;
+      object-fit: cover;
+      height: 35px;
+      align-self: flex-start;
+    }
+
+  }
+
+  .info-aquapark__subimg {
+    display: block;
+    position: absolute;
+    top: -50px;
+    right: -14px;
+    z-index: -1;
+    width: 108px;
+    height: 97px;
+  }
+
+  .info-aquapark__img {
+    display: none;
+  }
+
+  .info-aquapark-content {
+    margin: 70px 0 50px 0;
+  }
+
+  .aquapark-chef-list {
+    margin: 0;
+    padding: 60px 0 0 0;
+    flex-wrap: unset;
+    overflow-x: scroll;
+    width: 100%;
+    gap: 20px;
+
+    &__item {
+      border-radius: 10px;
+      width: 120px;
+      min-height: 137px;
+      height: auto;
+       
+      img {
+        width: 80px;
+        height: 80px;
+        top: 0;
+      }
+
+      h3 {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px; /* 111.111% */
+      }
+
+      h4 {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+
+    &__content {
+      bottom: 20px;
+    }
+
+  }
+
+  .aquapark-chef-list::-webkit-scrollbar{
+    width: 0; 
+  }
+}
+
+
