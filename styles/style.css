@@ -466,7 +466,7 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   border-radius: 20px;
   border: 2px solid rgba(138, 210, 245, 0.3);
   background: radial-gradient(116.62% 84.16% at 22.68% 20.4%, rgba(231, 231, 231, 0.2) 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.2);
@@ -480,6 +480,7 @@ ul {
 }
 
 .beverages__list li img {
+  width: 100%;
   height: 180px;
   border: 2px dotted #4BA4F8;
   border-radius: 20px;
@@ -517,7 +518,74 @@ ul {
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
-  /* 39px */
   margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .beverages__list {
+    gap: 16px;
+  }
+  .beverages__list li {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+    min-height: 130px;
+    padding: 20px;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    margin-bottom: 0;
+  }
+  .beverages__list li img {
+    width: 90px;
+    height: 90px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin: 0 10px 0 0;
+    border-radius: 12px;
+  }
+  .beverages__item-title {
+    font-family: 'Gilroy-SemiBold';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .beverages__item-category {
+    font-family: 'Gilroy-Medium';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    margin: 0;
+  }
+  .beverages__item-price {
+    font-family: 'Gilroy-SemiBold';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+  }
+  .beverages__item-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
