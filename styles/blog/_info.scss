@@ -299,6 +299,11 @@ ul {
   outline: none;
 }
 
+.aquapark-event-input::placeholder {
+  color: #1F1F1F;
+  opacity: 1;
+}
+
 .aquapark-event-btn {
   color: $white;
   font-family: 'Gilroy-Medium';

@@ -385,6 +385,26 @@ ul {
   outline: none;
 }
 
+.aquapark-event-input::-webkit-input-placeholder {
+  color: #1F1F1F;
+  opacity: 1;
+}
+
+.aquapark-event-input:-ms-input-placeholder {
+  color: #1F1F1F;
+  opacity: 1;
+}
+
+.aquapark-event-input::-ms-input-placeholder {
+  color: #1F1F1F;
+  opacity: 1;
+}
+
+.aquapark-event-input::placeholder {
+  color: #1F1F1F;
+  opacity: 1;
+}
+
 .aquapark-event-btn {
   color: #fff;
   font-family: 'Gilroy-Medium';
