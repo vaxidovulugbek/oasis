@@ -700,6 +700,45 @@ ul {
     border-radius: 20px !important;
     padding: 20px !important;
   }
+  .modal-bron-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .modall-bron .modal.show .modal-dialog {
+    width: 90% !important;
+    max-width: 90% !important;
+  }
+  .modall-bron .modal.fade .modal-dialog {
+    width: 90% !important;
+    max-width: 90% !important;
+  }
+  .modall-bron__img {
+    width: 100% !important;
+    height: 264px;
+    border-radius: 30px;
+  }
+  .modall-bron .modal-content {
+    border-radius: 30px !important;
+    padding: 0 !important;
+  }
+  .modall-bron__content {
+    padding: 20px;
+  }
+  .modall-bron__title {
+    font-family: 'Gilroy-Bold';
+    font-size: 22px;
+  }
+  .modall-bron__subtext {
+    font-size: 16px;
+  }
+  .modall-bron__text {
+    font-size: 14px;
+  }
 }
 
 .menu {
