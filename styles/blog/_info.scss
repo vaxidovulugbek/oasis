@@ -22,6 +22,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 60px;
+    padding: 0;
+    margin: 0 0 180px 0;
   }
 
   &__item {
@@ -33,6 +35,96 @@
     border-radius: 50px;
     background: #FFF;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+  }
+
+  &__event-img {
+    height: 315px;
+    border-radius: 50px;
+    margin-bottom: 12px;
+  }
+
+  &__event-title {
+    color: $main-color;
+    text-align: center;
+    font-family: 'Gilroy-Bold';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: -0.48px;
+    padding: 0 25px;
+    margin: 0 0 20px 0;
+  }
+
+  &__event-text {
+    color: $event-text-color;
+    text-align: center;
+    font-family: 'Gilroy-Regular';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: -0.3px;
+  }
+
+  &__event-date {
+    margin-bottom: 20px;
+    color: $event-text-color;
+    text-align: center;
+    font-family: 'Gilroy-SemiBold';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: -0.48px;
+  }
+
+  &__event-info {
+    padding: 0 25px 30px 25px;
+  }
+
+  &__more {
+    text-decoration: none;
+    padding: 11px 11px 11px 16px;
+    min-width: 145px;
+    min-height: 44px;
+    color: $white;
+    font-family: 'Gilroy-SemiBold';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.27px;
+    border-radius: 136px;
+    background: linear-gradient(90deg, #1EA5E7 12.01%, #8AD2F5 76.22%);
+    transition: all .2s linear;
+    border: none;
+  }
+
+  &__more:hover img {
+    transform: translateX(6px);
+    transition: all .2s linear;
+  }
+
+  &__more img {
+    transition: all .2s linear;
+  }
+
+  &__bron {
+      text-decoration: none;
+      padding: 11px 16px;
+      min-width: 145px;
+      min-height: 44px;
+      color: $white;
+      font-family: 'Gilroy-SemiBold';
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.27px;
+      border-radius: 136px;
+      background: #01AF1C;
+      border: none;
   }
 
   &__title {
@@ -172,7 +264,80 @@ ul {
   }
 }
 
+.desctop-dn {
+  display: none;
+}
 
+.aquapark-event-title {
+  color: $event-text-color;
+  font-family: 'Gilroy-Bold';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: -0.3px;
+  margin-bottom: 8px;
+}
+
+.aquapark-event-text {
+  color: $event-text-color;
+  font-family: 'Gilroy-Regular';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%; /* 17.5px */
+  letter-spacing: -0.21px;
+  margin-bottom: 20px;
+}
+
+.aquapark-event-input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--light-gray-light-gray-2, #DDE2E4);
+  background: var(--black-white-white, #FFF);
+  outline: none;
+}
+
+.aquapark-event-btn {
+  color: $white;
+  font-family: 'Gilroy-Medium';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.154px;
+  margin-top: 20px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background: #01AF1C;
+  border: none;
+}
+
+.modal.show .modal-dialog {
+  width: 425px !important;
+}
+
+.modal.fade .modal-dialog {
+  width: 425px !important;
+}
+
+.modal-dialog {
+  margin: 0 auto !important ;
+}
+
+.modal-content {
+  border-radius: 30px !important;
+  padding: 30px !important;
+}
+
+.modal-body {
+  padding: 0 !important;
+}
 
 @media screen and (max-width:480px) {
   .info-aquapark {
@@ -268,6 +433,116 @@ ul {
 
   .aquapark-chef-list::-webkit-scrollbar{
     width: 0; 
+  }
+
+  .info-aquapark__l-img {
+    display: none;
+  }
+
+  .info-aquapark__r-img {
+    display: none;
+  }
+
+  .desctop-dn {
+    display: block;
+  }
+
+  .info-aquapark__list {
+    margin: 0;
+    padding: 20px 0;
+    flex-wrap: unset;
+    overflow-x: scroll;
+    width: 100%;
+    gap: 20px;
+  }
+  .info-aquapark__list::-webkit-scrollbar{
+    width: 0; 
+  }
+
+  .info-aquapark__item {
+    min-width: 262px;
+    width: auto;
+    border-radius: 40px;
+    min-height: 510px;
+  }
+
+  .info-aquapark__event-img {
+    border-radius: 40px;
+    height: 224px;
+    margin-bottom: 12px;
+  }
+
+  .info-aquapark__event-title {
+    font-family: 'Gilroy-Bold';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0 20px;
+    margin-bottom: 8px;
+  }
+
+  .info-aquapark__event-text {
+    font-family: 'Gilroy-Regular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .info-aquapark__event-date {
+    font-family: 'Gilroy-SemiBold';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .info-aquapark__more {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .aquapark-event-title {
+    color: $event-text-color;
+    font-family: 'Gilroy-Bold';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: -0.3px;
+    margin-bottom: 8px;
+  }
+  
+  .aquapark-event-text {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  
+  .aquapark-event-input {
+    padding: 12px 16px;
+    border-radius: 12px;
+  }
+  
+  .aquapark-event-btn {
+    font-family: 'Gilroy-Medium';
+    font-size: 15px;
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 20px;
+  }
+  
+  .modal.show .modal-dialog {
+    width: 95% !important;
+  }
+  
+  .modal.fade .modal-dialog {
+    width: 95% !important;
+  }
+  
+  .modal-content {
+    border-radius: 20px !important;
+    padding: 20px !important;
   }
 }
 
